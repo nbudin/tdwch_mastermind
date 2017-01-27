@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'tdwch_mastermind'
+
+game = TdwchMastermind::Game.new(('A'..'H').to_a, ['D', 'A', 'F', 'D', 'E', 'H'])
+ui = TdwchMastermind::UI.new(game)
+ui.main_loop
